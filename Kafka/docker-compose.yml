@@ -94,3 +94,39 @@ services:
       CONTROL_CENTER_MONITORING_INTERCEPTOR_TOPIC_PARTITIONS: 1
       CONFLUENT_METRICS_TOPIC_REPLICATION: 1
       PORT: 9021
+      
+  kafka-consumer-one:
+    image: kafka_consumer:latest
+    hostname: consumerone
+    container_name: consumerone
+    depends_on:
+      - broker
+    environment:
+      DockerName : '消費者1號'
+      KafkaServiceIpPort: 'broker:9093'
+      TZ: Asia/Taipei
+      SeqService: "http://192.168.0.159:5341"
+      
+  kafka-consumer-two:
+    image: kafka_consumer:latest
+    hostname: consumertwo
+    container_name: consumertwo
+    depends_on:
+      - broker
+    environment:
+      DockerName : '消費者2號'
+      KafkaServiceIpPort: 'broker:9093'
+      TZ: Asia/Taipei
+      SeqService: "http://192.168.0.159:5341"
+      
+  kafka-consumer-three:
+    image: kafka_consumer:latest
+    hostname: consumerthree
+    container_name: consumerthree
+    depends_on:
+      - broker
+    environment:
+      DockerName : '消費者3號'
+      KafkaServiceIpPort: 'broker:9093'
+      TZ: Asia/Taipei
+      SeqService: "http://192.168.0.159:5341"
