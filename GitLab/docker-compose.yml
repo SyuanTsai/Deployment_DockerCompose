@@ -1,0 +1,19 @@
+version: '3'
+services:
+  gitlab:
+    image: gitlab/gitlab-ee:latest
+    hostname: gitlab.Tw-Syuan.com
+    container_name: gitlab
+    ports:
+      - "80:80"
+      - "443:443"
+      - "2222:22"
+    volumes:
+      - ${GITLAB_PATH}config:/etc/gitlab
+      - ${GITLAB_PATH}logs:/var/log/itlab
+      - ${GITLAB_PATH}data:/var/opt/gitlab
+    deploy:
+        resources:
+            limits:
+              cpus: '2'
+              memory: 16G
