@@ -1,0 +1,13 @@
+version: '3'
+services:
+  getenvdata:
+    image: nginx:latest
+    hostname: getEnvData
+    container_name: getEnvData
+    environment:
+      TESTMSGDATA: ${TEST_MSGDATA}
+    command: >
+      sh -c "echo 參數的取得方式 &&
+      echo  $${TESTMSGDATA} &&
+      echo  $$TESTMSGDATA
+      "
