@@ -1,10 +1,9 @@
-version: '3.9'
+version: '3.8'
 services:
   nginx:
     image: nginx:latest
     hostname: nginx
     container_name: nginx
-    build: .
     ports:
       - "80:80"
       - "443:443"
@@ -23,3 +22,4 @@ services:
       echo '執行命令 acme.sh --set-default-ca --server letsencrypt' &&
       acme.sh --set-default-ca --server letsencrypt
       "
+      # 未完 需補充DockerFile
