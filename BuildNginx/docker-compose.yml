@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+  nginx:
+    image: nginx:latest
+    hostname: nginx
+    container_name: nginx
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      HTTPSMAIL: ${HTTPS_MAIL}
+    command: >
+      sh -c "echo 工具更新 &&
+      echo '執行命令 apt-get update' &&
+      apt-get update &&
+      echo '執行命令 apt-get install cron socat -y' &&
+      apt-get install cron socat -y &&
+      echo '執行命令 curl https://get.acme.sh | -s email=$${HTTPSMAIL}' &&
+      curl https://get.acme.sh | sh -s email=$${HTTPSMAIL} &&
+      echo '執行命令 export PATH=$$PATH:/root/.acme.sh' &&
+      export PATH=$$PATH:/root/.acme.sh &&
+      echo '執行命令 acme.sh --set-default-ca --server letsencrypt' &&
+      acme.sh --set-default-ca --server letsencrypt
+      "
