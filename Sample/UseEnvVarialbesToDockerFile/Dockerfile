@@ -1,0 +1,4 @@
+FROM nginx:latest
+ARG TESTMSGDATA
+
+RUN echo Env參數 ${TESTMSGDATA}
