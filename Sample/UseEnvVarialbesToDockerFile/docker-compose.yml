@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  getenvdata:
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        - TESTMSGDATA=$TEST_MSGDATA
+# 請用 Docker Compose up 查看(不要-d)        
