@@ -11,9 +11,9 @@ this branch.
 
 The Compose files contain configuration and references to external images and
 services. No third-party source tree or copied image contents is stored in the
-reviewed repository. External dependencies remain outside any proposed
-repository license.
+reviewed repository. External dependencies remain outside the scoped MIT grant.
 
-No additional license is granted by this branch. A future license decision
-must name the exact paths, verify the authority to license them, and preserve
-the exclusions documented in THIRD_PARTY_NOTICES.md.
+The owner authorization confirmed on 2026-09-05 applies only to the paths listed
+in LICENSE-SCOPE.md. The branch publishes the standard MIT text for those
+paths; it does not grant rights over the `.env` files, external dependencies,
+generated output, user-provided values, or other excluded material.
