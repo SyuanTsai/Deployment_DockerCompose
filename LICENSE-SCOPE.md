@@ -1,23 +1,16 @@
 # License scope
 
-This repository uses the MIT License only for the repository-authored Docker
-Compose examples, Dockerfiles, and the clean-room project documentation listed
-below:
+No additional license is granted by this branch.
 
-- BuildNginx/**
-- GitLab/**
-- Kafka/**
-- Kafka - v1.0/**
-- Sample/**
-- README.md
-- PROVENANCE.md
-- LICENSE-SCOPE.md
-- THIRD_PARTY_NOTICES.md
+The reviewed tree contains repository-authored Docker Compose and Dockerfile
+examples plus references to external images and services. A possible MIT
+scope for the examples is recorded for review only; it is not effective until
+the repository owner explicitly authorizes that exact grant and the MIT
+license text is added.
 
-The license does not grant rights to software distributed through referenced
-container images, package registries, external services, trademarks, or
-third-party documentation. Those items remain under their own terms. The
-.gitignore file is not a work product that this scope attempts to relicense.
+The external images, package registries, services, trademarks, upstream
+documentation, generated output, and user-provided values remain under their
+own rights. The .gitignore file is not a work product that this branch
+attempts to relicense.
 
-The scope is intentionally path-based so a future addition must be reviewed
-before it is described as MIT-licensed.
+Future files require a separate source and rights review.
