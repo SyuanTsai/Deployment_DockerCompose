@@ -1,16 +1,21 @@
 # License scope
 
-No additional license is granted by this branch.
+The MIT text in [LICENSES/MIT.txt](LICENSES/MIT.txt) is effective for the
+following exact repository-authored paths:
 
-The reviewed tree contains repository-authored Docker Compose and Dockerfile
-examples plus references to external images and services. A possible MIT
-scope for the examples is recorded for review only; it is not effective until
-the repository owner explicitly authorizes that exact grant and the MIT
-license text is added.
+- `README.md`
+- `BuildNginx/docker-compose.yml`
+- `GitLab/docker-compose.yml`
+- `Kafka - v1.0/docker-compose.yml`
+- `Kafka/docker-compose.yml`
+- `Sample/UseEnvVariables/docker-compose.yml`
+- `Sample/UseEnvVarialbesToDockerFile/Dockerfile`
+- `Sample/UseEnvVarialbesToDockerFile/docker-compose.yml`
 
-The external images, package registries, services, trademarks, upstream
-documentation, generated output, and user-provided values remain under their
-own rights. The .gitignore file is not a work product that this branch
-attempts to relicense.
+The following remain outside that grant: both `.env` files, `.gitignore`,
+external images and services, package registries, trademarks, upstream
+documentation, generated output, and user-provided values. The license file
+and rights-boundary records describe the grant but do not expand it.
 
-Future files require a separate source and rights review.
+No repository-wide license is granted beyond the paths listed above. Future
+files require a separate source and rights review.
