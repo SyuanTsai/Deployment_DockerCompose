@@ -16,8 +16,10 @@ included or relicensed by this repository.
 
 ## Rights status
 
-This branch records a source and dependency review only. It does not grant an
-additional license. A proposed MIT scope for repository-authored examples
-requires explicit owner approval before publication. See
-[LICENSE-SCOPE.md](LICENSE-SCOPE.md), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md),
-and [PROVENANCE.md](PROVENANCE.md).
+[LICENSES/MIT.txt](LICENSES/MIT.txt) applies only to the exact repository-authored
+paths listed in [LICENSE-SCOPE.md](LICENSE-SCOPE.md). External images, services,
+documentation, generated output, user-provided values, and other dependencies
+retain their own rights and are not included in that scoped grant.
+
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and
+[PROVENANCE.md](PROVENANCE.md).
