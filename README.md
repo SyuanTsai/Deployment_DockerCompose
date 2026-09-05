@@ -14,10 +14,10 @@ The examples are intentionally incomplete and should be reviewed before use.
 They reference external images and services; those dependencies are not
 included or relicensed by this repository.
 
-## License
+## Rights status
 
-The repository-authored examples and documentation listed in
-[LICENSE-SCOPE.md](LICENSE-SCOPE.md) are available under the [MIT License](LICENSE).
-External images, services, tools, trademarks, and documentation retain their
-respective rights. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and
-[PROVENANCE.md](PROVENANCE.md).
+This branch records a source and dependency review only. It does not grant an
+additional license. A proposed MIT scope for repository-authored examples
+requires explicit owner approval before publication. See
+[LICENSE-SCOPE.md](LICENSE-SCOPE.md), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md),
+and [PROVENANCE.md](PROVENANCE.md).
